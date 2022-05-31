@@ -6,6 +6,11 @@
 //Once someone wins 5 games from the play function, the game function will end and the winner will be displayed.
 
 //Create function for computerPlay that returns Rock, Paper or Scissors.
+function computerPlay() {
+    const options = ['ROCK', 'PAPER', 'SCISSORS'];
+    return options[Math.floor(Math.random() * 3)];
+}
+
 //Create a function that plays a single round and takes two inputs (user input and computer input)
     //Have the function return win or lose
 //Get user input
