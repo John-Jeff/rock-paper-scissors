@@ -32,6 +32,8 @@ function playRound(playerSelection, computerSelection) {
         } else if (computerSelection === 'PAPER') {
             console.log('Paper beats Rock! Computer wins this round!');
             computerScore += 1;
+        } else {
+            console.log('Its a tie! No winner this round!');
         }
     } else if (playerSelection === 'PAPER') {
         if (computerSelection === 'ROCK') {
@@ -40,6 +42,8 @@ function playRound(playerSelection, computerSelection) {
         } else if (computerSelection === 'SCISSORS') {
             console.log('Scissors beats Paper! Computer wins this round!');
             computerScore += 1;
+        } else {
+            console.log('Its a tie! No winner this round!');
         }
     } else if (playerSelection === 'SCISSORS') {
         if (computerSelection === 'PAPER') {
@@ -48,6 +52,8 @@ function playRound(playerSelection, computerSelection) {
         } else if (computerSelection === 'ROCK') {
             console.log('Rock beats Scissors! Computer wins this round!');
             computerScore += 1;
+        } else {
+            console.log('Its a tie! No winner this round!');
         }
     }
 }
