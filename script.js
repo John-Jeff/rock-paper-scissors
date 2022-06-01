@@ -11,6 +11,15 @@ function computerPlay() {
     return options[Math.floor(Math.random() * 3)];
 }
 
+//Get user input and check for valid entry
+function playerInput () {
+    let player = prompt('Enter Rock, Paper or Scissors').toUpperCase();
+    while (player !== 'ROCK' && player !== 'PAPER' && player !== 'SCISSORS') {
+        player = prompt('Not a valid option, please enter Rock, Paper or Scissors').toUpperCase();
+    }
+    return player;
+}
+
 //Create a function that plays a single round and takes two inputs (user input and computer input)
 function playRound(playerSelection, computerSelection) {
     if (playerSelection === 'ROCK') {
@@ -34,6 +43,5 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-//Get user input
     //Make user input case-insensitive
 //Create function called game that calls play function to play 5 rounds and keeps score
