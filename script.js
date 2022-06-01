@@ -60,8 +60,15 @@ function playRound(playerSelection, computerSelection) {
 
 //Create function called game that calls play function to play 5 rounds and keeps score
 function game() {
+    alert('Welcome to a really cool game of Rock Paper Scissors');
+    alert('First to 5 wins. Let the games begin!');
     while (playerScore !== 5 && computerScore !== 5) {
         playRound(playerInput(), computerPlay());
+        console.log(`Score: Player - ${playerScore} \nComputer - ${computerScore}`);
     }
-    console.log('meow');
+    if (playerScore === 5) {
+        alert('Congrats! You are the winner of this really cool game!')
+    } else {
+        alert('Aww man, you lost.')
+    }
 }
