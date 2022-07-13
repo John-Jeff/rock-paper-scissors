@@ -54,7 +54,7 @@ function computerPlay() {
 function decideWinner(selection) {
     let comp = computerPlay();
     if (comp === selection.win) {
-        result.textContent = `${selection.tie} beats ${selection.win}! Player wins this round!`;
+        result.textContent = `${selection.tie} beats ${selection.win}! You win this round!`;
         playerScore.textContent++;
     } else if (comp === selection.lose) {
         result.textContent = `${selection.lose} beats ${selection.tie}! Computer wins this round!`;
