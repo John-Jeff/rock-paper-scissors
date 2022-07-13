@@ -63,7 +63,7 @@ function decideWinner(selection) {
         result.textContent = 'Its a tie! No winner this round!';
     }
 
-    if (playerScore.textContent === '5' || computerScore.textContent ==='5') {
+    if (playerScore.textContent === '5' || computerScore.textContent === '5') {
         rock.button.disabled = true;
         paper.button.disabled = true;
         scissors.button.disabled = true;
@@ -75,8 +75,8 @@ function decideWinner(selection) {
         }
 
         resetGame();
-    }    
-    
+    }
+
 }
 
 function resetGame() {
@@ -86,6 +86,16 @@ function resetGame() {
     resetButton.classList.add('button');
     resetField.classList.add('reset-button');
     resetField.appendChild(resetButton);
+
+    resetButton.addEventListener('click', function (e) {
+        rock.button.disabled = false;
+        paper.button.disabled = false;
+        scissors.button.disabled = false;
+        playerScore.textContent = 0;
+        computerScore.textContent = 0;
+        result.textContent = 'Make a selection to begin';
+        resetField.removeChild(resetButton);
+    })
 }
 
 // //Get user input and check for valid entry
