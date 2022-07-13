@@ -16,24 +16,36 @@
 
 <body>
     <h1>Rock Paper Scissors</h1>
-    <p>Welcome to this really cool game of Rock Paper Scissors!</p>
+    <h2>Welcome to this really cool game of Rock Paper Scissors!</h2>
 
     <h2>Please make and selection below and see if you can beat Greg.</h2>
     <h3>First to 5 wins</h3>
     <p>(Don't worry about Greg, he's glad to be on 24/7 waiting for a new opponent)</p>
 
-    <div class="card-set">
+    <!-- <div class="card-set">
         <img class="card" src="somestone-card.svg" alt="Rock">
         <img class="card" src="somestone-card.svg" alt="Paper">
         <img class="card" src="somestone-card.svg" alt="Scissors">
+    </div> -->
+
+    <div class="current-score">
+        <span id="player-score" >0</span> - <span id="comp-score" >0</span>
     </div>
 
     <br>
 
     <div class="button-group">
-        <button class="button" type="button">Rock</button>
-        <button class="button" type="button">Paper</button>
-        <button class="button" type="button">Scissors</button>
+        <button class="button" id="rock-btn" type="button">Rock</button>
+        <button class="button" id="paper-btn" type="button">Paper</button>
+        <button class="button" id="scissor-btn" type="button">Scissors</button>
+    </div>
+
+    <div class="results">
+        Make a selection to begin
+    </div>
+
+    <div class="reset">
+
     </div>
 
     <script src="script.js"></script>
